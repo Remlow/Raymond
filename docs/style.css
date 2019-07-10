@@ -53,16 +53,6 @@ li a.active {
 }
 /* End of navigation code */
 
-/* Image width */
-img {
-	height: 300px;
-	max-width: 100%;
-}
-#sevicesImage img {
-	display: block;
-	margin: auto;
-}
-
 /* Website content */	
 .content {
 	margin: 1% 20% 0 20%;
