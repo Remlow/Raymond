@@ -1,49 +1,224 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
-		<title>Raymonds Website| Home</title>
-		<link rel="stylesheet" type="text/css" href="./style.css">
-        <script src="script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- Font sourced from google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
-		
-		<!-- Icons source from -->
-		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<title>Tutoring</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	</head>
 	
 	<body>
-		<!-- Company title -->
-		<div class="logo">
-		<header>
-			<h1>Raymonds Website</h1>
-		</header>
-		</div>
+		<div id="container">
+	        
+	        <!--Header-->
+<div id="header">
+   
+   <div id="Mainheader">
+              <!--Display this header when not logged in-->
+       <div id="headerNotloggin"><i class="fa fa-envelope-o"></i> Problems? Contact us at 1234@1234.com</div>
+          </div>
+   
+   <!--Display the mobile header once it is smaller than 768px-->
+   <div id="mobileheader">
+       <a href="index.php" class="mobileHome"><h2>Logo</h2></a>
+   </div>
+   
+</div>		
+		    <!--Navigation-->
+<div class="topnav" id="myTopnav">
+    <!--Logo-->
+    <div class="logo"><h1>Logo</h1></div>
+    
+    <!--Navigation links-->
+      <a href="index.php" class="active">Home</a>
+      <a href="tutors.php">Our tutors</a>
+      
+    <!--Dropdown links  -->
+      <div class="dropdown">
+        <button class="dropbtn">Tutoring
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="tuteeProfile.php">Tutee Profiles</a>
+        </div>
+      </div>
+      
+    <!--Display these links in the navigation if the screen is larger than 1024px  -->
+      
+    
+    <!--Hamburger menu-->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-		<!-- Navigation -->
-		<div id="navigation">
-			<ul>
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="#">About me</a></li>
-				<li><a href="#">Contact me</a></li>
-			</ul>
-		</div>
-		
-		<!-- Home page content-->	
-		<div class="content">
-			<p>Welcome to my website. This website will be about me and my adventures</p>
-			
-		</div>
-		
-		<!-- Footer always on the bottom sourced from -->
-		<!-- https://codepen.io/vsync/pen/FyluI -->
-		<footer>
-			<div class="footer-content">
-				<p><span>&copy R.Li 2019</span><p>
-			</div>
-		</footer>
+<!--Javascript-->
+<script>
 
+// Conditionally load the sticky navigation
+if (screen.width >= 1024) {
+    window.onscroll = function() {stickynav()};
+    
+    var header = document.getElementById("myTopnav");
+    var sticky = header.offsetTop;
+    
+    function stickynav() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+}
+
+// If the screen is less than 768px then load this script
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+		    
+		    		    
+		    <!--Hero image container-->
+		    
+        		<div id="herobgImage">
+        	       
+                    <!--Hero content-->
+    	            <div id="heroContent">
+                        <!--Hero text-->
+                        <div class="heroText">
+                        <h2>Header</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                        </p>
+                        </div>
+                        
+                        <!--Hero buttons-->
+                        <div class="heroButtons">
+                            
+                            <!--Display these buttons when not loggedn in-->
+                                                        <a href="register.php" class="btn1">Sign up to become a tutor/tutee</a>
+                            <button class="btn" id="myBtn">Login</button>
+                                                        
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                
+                                <!-- Modal content -->
+                                    <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                  <h2>Login</h2>
+                                                </div>
+                                                <div class="modal-body">
+                                                <div class="loginContainer">
+                                                    <form action="login.php?ID" method="post">
+                                                    <div>
+                                                        <label class="linput" for="userName">Username: </label><br>
+                                                        <input name="userName" type="text" autocomplete="off">
+                                                    </div>
+                                                    <div>
+                                                        <label class="linput" for="password">Password: </label><br>
+                                                        <input name="password" type="password"><br>
+                                                    </div>
+                                                    <div>
+                                                        <input type="submit" value="Login" >
+                                                    </div>
+                                                    </form>     
+                                                </div>
+                                                </div>
+                                        </div>
+                                    <!--End of modal content-->
+                                    
+                                </div> <!--End of modal-->
+                            
+                            </div>
+                            
+                            <!--End of hero buttons-->
+                            
+                            <script>
+                            // Get the modal
+                            var modal = document.getElementById('myModal');
+                            
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+                            
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+                            
+                            // When the user clicks the button, open the modal 
+                            btn.onclick = function() {
+                                modal.style.display = "block";
+                            }
+                            
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                                modal.style.display = "none";
+                            }
+                            
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                            </script>
+                        </div>
+                </div>
+	        
+	        			
+            <!--Content-->
+			<div id="content">
+                                
+				<h2>Welcome</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+
+				<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
+				
+				<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
+				
+				<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
+				
+				<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
+				
+				<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
+				
+				<p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
+				
+								
+				<!--If the user is logged in display this content-->
+				
+				
+			</div> 
+			<!-- Content  -->
+            
+            <!--Footer-->
+		    <div id="footer">
+			    <div id="footerContent">
+    			        <div class="contactFooter">
+        			        <h3>Contact us</h3>
+        		            <p>250 Ligma Dock</p>
+        			        <p>Hillcrest</p>
+        			        <p>North Shore</p>
+        			        <p>(026) 8841-360</p>
+        			    </div>
+			    </div>
+		    </div>
+		    
+		    <!--Social footer-->
+		    <div id="socialFooter">
+		                <div id="socialContent">
+        				    <p>&copy; R.Li 2018</p>
+        				    <i class="fa fa-facebook-square" style="font-size:24px"></i>
+        				    <i class="fa fa-twitter-square" style="font-size:24px"></i>
+        				    <i class="fa fa-instagram" style="font-size:24px"></i>
+        		        </div>
+            </div>
+            
+		</div>  <!-- Container  -->
 	</body>
+
 </html>
