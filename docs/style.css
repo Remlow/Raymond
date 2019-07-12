@@ -41,10 +41,6 @@ p {
 		grid-template-columns: 25% 25% 25% 25%;
 	    justify-items: end;
 	}
-	#headerNotloggin {
-	    grid-column: 4 / 5;
-	    padding: 5px;
-	}
 	#headerContent {
 	    grid-column: 2 / 3;
 	    padding: 5px;
@@ -70,40 +66,10 @@ p {
 		padding: 10px;
 		align-items: center
 	}
-	.heroButtons {
-	    grid-column: 3 / 4;
-	}
-	.modal-content {
-	    width: 25%;
-	}
 	#content {
 	    grid-column: 2 / 3;
 	}
-	.signUpcontainer {
-	    width: 75%;
-	    margin: auto;
-	}
-	.nameDets {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50% ;
-    }
-    .left  {
-        margin-right: 5px;
-    }
-    .right {
-        margin-left: 5px;
-    }
-    .signin {
-        width: 75%;
-    }
-    .delete {
-        width: 75%;
-    }
-    .card {
-        float: left;
-        margin: 10px;
-    }
+
 	#footer {
 	    grid-column: 1 / 4;
 	    display: grid;
