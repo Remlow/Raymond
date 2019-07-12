@@ -18,10 +18,11 @@
 			
 			<!--Display the mobile header once it is smaller than 768px-->
 			<div id="mobileheader">
-				<a href="index.php" class="mobileHome"><h2>Logo</h2></a>
+				<a href="index.html" class="mobileHome"><h2>Logo</h2></a>
 			</div>
 			
-			</div>		
+            </div>
+            		
 		    <!--Navigation-->
 			<div class="topnav" id="myTopnav">
 				<!--Logo-->
@@ -30,40 +31,39 @@
 				<!--Navigation links-->
 				<a href="index.html" class="active">Home</a>
 				<a href="#">About me</a>
-      
     
-    <!--Hamburger menu-->
+            <!--Hamburger menu-->
     		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		</div>
+		    </div>
 
-<!--Javascript-->
-<script>
+                <!--Javascript-->
+                <script>
 
-if (screen.width >= 1024) {
-    window.onscroll = function() {stickynav()};
-    
-    var header = document.getElementById("myTopnav");
-    var sticky = header.offsetTop;
-    
-    function stickynav() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-}
+                if (screen.width >= 1024) {
+                    window.onscroll = function() {stickynav()};
+                    
+                    var header = document.getElementById("myTopnav");
+                    var sticky = header.offsetTop;
+                    
+                    function stickynav() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                    }
+                }
 
-// If the screen is less than 768px then load this script
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+                // If the screen is less than 768px then load this script
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+                </script>
 		    
 		    		    
 		    <!--Hero image container-->
