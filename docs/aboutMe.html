@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Raymonds Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div id="container">
+	        
+	        <!--Header-->
+			<div id="header">
+			
+			<!--Display the mobile header once it is smaller than 768px-->
+			<div id="mobileheader">
+				<a href="./index.html" class="mobileHome"><h2>Logo</h2></a>
+			</div>
+			
+            </div>
+            		
+		    <!--Navigation-->
+			<div class="topnav" id="myTopnav">
+				<!--Logo-->
+				<div class="logo"><h1>Logo</h1></div>
+				
+				<!--Navigation links-->
+				<a href="./index.html" class="active">Home</a>
+				<a href="#">About me</a>
+    
+            <!--Hamburger menu-->
+    		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		    </div>
+
+                <!--Javascript-->
+                <script>
+
+                if (screen.width >= 1024) {
+                    window.onscroll = function() {stickynav()};
+                    
+                    var header = document.getElementById("myTopnav");
+                    var sticky = header.offsetTop;
+                    
+                    function stickynav() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                    }
+                }
+
+                // If the screen is less than 768px then load this script
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+                </script>
+		    
+		    		    
+		    <!--Hero image container-->
+		    
+        		<div id="herobgImage">
+                    <!--Hero content-->
+    	            <div id="heroContent">
+                        <!--Hero text-->
+                        <div class="heroText">
+                            <h2>Header</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                                </p>
+                        </div>
+                    </div>                                   
+                </div>
+        			
+            <!--Content-->
+			<div id="content">
+                                
+				
+				
+			</div> 
+			<!-- Content  -->
+            
+            <!--Footer-->
+		    <div id="footer">
+			    <div id="footerContent">
+    			        <div class="contactFooter">
+        			        <h3>Contact us</h3>
+        		            <p>250 Ligma Dock</p>
+        			        <p>Hillcrest</p>
+        			        <p>North Shore</p>
+        			        <p>(026) 8841-360</p>
+        			    </div>
+			    </div>
+		    </div>
+		    
+		    <!--Social footer-->
+		    <div id="socialFooter">
+		                <div id="socialContent">
+        				    <p>&copy; R.Li 2018</p>
+        				    <i class="fa fa-facebook-square" style="font-size:24px"></i>
+        				    <i class="fa fa-twitter-square" style="font-size:24px"></i>
+        				    <i class="fa fa-instagram" style="font-size:24px"></i>
+        		        </div>
+            </div>
+            
+		</div>  <!-- Container  -->
+	</body>
+
+</html>
