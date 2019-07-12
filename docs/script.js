@@ -1,4 +1,3 @@
-// Conditionally load the sticky navigation
 if (screen.width >= 1024) {
     window.onscroll = function() {stickynav()};
     
