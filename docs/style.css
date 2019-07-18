@@ -696,6 +696,6 @@ hr {
     color: white;
     background-color: #4c6b80;
     padding: 10px;
-    grid-row-start: 11;
-    grid-row-end: 12;
+    grid-row-start: 8;
+    grid-row-end: 10;
 }
