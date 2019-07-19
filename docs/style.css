@@ -259,8 +259,7 @@ a.logo {
 }
 
 #socialFooter {
-    bottom: 0;
-    text-align: right;
+    text-align: center;
     color: white;
     background-color: #4c6b80;
     padding: 10px;
