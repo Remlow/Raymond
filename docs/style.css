@@ -266,6 +266,6 @@ a.logo {
     color: white;
     background-color: #4c6b80;
     padding: 10px;
-    grid-row-start: 8;
-    grid-row-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 7;
 }
