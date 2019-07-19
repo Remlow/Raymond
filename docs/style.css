@@ -153,8 +153,6 @@ a.logo {
     display: none;
 }
 
-
-
 .topnav a:hover, .dropdown:hover .dropbtn {
   border-bottom: 3px solid #fff;
   color: white;
