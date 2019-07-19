@@ -261,6 +261,7 @@ a.logo {
 }
 
 #socialFooter {
+    bottom: 0;
     text-align: right;
     color: white;
     background-color: #4c6b80;
