@@ -93,9 +93,6 @@ p {
 	
 }
 @media only screen and (min-width: 800px) {
-	#mobileheader {
-	    display: none;
-	}
 	.topnav .headerlinks {
 	    display: none;
 	}
@@ -247,7 +244,6 @@ a.logo {
 
 /*Hero image*/
 #herobgImage {
-    background-image: url(images/heroimage1withoutwatermark.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -263,5 +259,5 @@ a.logo {
     color: white;
     background-color: #4c6b80;
     padding: 10px;
-    grid-column: 5 / 7;
+    grid-column: 1 / 12;
 }
