@@ -9,10 +9,6 @@ html, body{
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
 }
-#header {
-	background-color: #d5e7d1;
-	color: #000;
-}
 #content {
 	padding: 10px;
 }
@@ -99,13 +95,6 @@ p {
     
 }
 
-.headerlinks {
-    display: block;
-    margin: auto;
-    color: #000000;
-    text-decoration: none;
-    font-size: 17px;
-}
 /*Sticky nav header*/
 .sticky {
   position: fixed;
