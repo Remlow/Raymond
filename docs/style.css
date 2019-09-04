@@ -26,21 +26,6 @@ p {
 		grid-template-columns: 10% 80% 10%;
 		grid-template-rows: 1fr auto;
 	}
-	#header {
-		grid-column: 1 / 4;
-		display: grid;
-		grid-template-columns: 10% 80% 10% ;
-	}
-	#Mainheader {
-	    grid-column: 2 / 3;
-	    display: grid;
-		grid-template-columns: 25% 25% 25% 25%;
-	    justify-items: end;
-	}
-	#headerContent {
-	    grid-column: 2 / 3;
-	    padding: 5px;
-	}
 	.topnav {
 		grid-column: 1 / 4;
 		display: grid;
@@ -49,33 +34,9 @@ p {
 	.logo{
 	    grid-column: 2 / 7;
 	}
-	#herobgImage {
-	    grid-column: 1 / 4;
-	    display: grid;
-		grid-template-columns: 10% 80% 10%;
-		height: 300px;
-	}
-	#heroContent {
-	    grid-column: 2 / 3;
-	    display: grid;
-		grid-template-columns: 33.33% 33.33% 33.33% ;
-		padding: 10px;
-		align-items: center
-	}
+	
 	#content {
 	    grid-column: 2 / 3;
-	}
-
-	#footer {
-	    grid-column: 1 / 4;
-	    display: grid;
-		grid-template-columns: 10% 80% 10%;
-	}
-	#footerContent {
-	    grid-column: 2 / 3;
-	    display: grid;
-		grid-template-columns: 33.33% 33.33% 33.33% ;
-		padding: 10px;
 	}
 	#socialFooter {
 	    grid-column: 1 / 4;
@@ -89,7 +50,7 @@ p {
 	
 }
 @media only screen and (min-width: 800px) {
-	.topnav .headerlinks #mobileheader {
+	.topnav .headerlinks  {
 	    display: none;
 	}
     
@@ -157,20 +118,6 @@ a.logo {
     #container {
         display: grid;
     }
-    #Mainheader {
-        display: none;
-    }
-    #mobileheader{
-        padding: 10px;
-        text-align: center;
-        background-color: #002d4b;
-        color: white;
-        text-decoration: none;
-    }
-    .mobileHome {
-        text-decoration: none;
-        color: white;
-    }
     .modal-content {
 	    width: 80%;
 	}
@@ -188,24 +135,8 @@ a.logo {
         float: right;
         display: block;
     }
-    .navSearch {
-        display: none;
-    }
-    .heroText {
-        display: none;
-    }
     .logo{
         display: none;
-    }
-    .headerContent {
-        padding: 10px;
-    }
-    .card {
-        margin: 10px auto;
-    }
-    #footer {
-        grid-row-start: 2;
-        grid-row-end: 3;
     }
 }
 /*Responsive nav hamburger*/
@@ -231,18 +162,6 @@ a.logo {
   }
 }
 
-/*Hero image*/
-#herobgImage {
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-}
-
-.heroText {
-    color: black;
-}
 
 #socialFooter {
     position: absolute;   
