@@ -69,10 +69,10 @@ p {
 
 /*Navigation*/
 .topnav {
-    background-color: #599bff;
+    background-color: #000000;
 }
 a.logo {
-    color: black;
+    color: #fff;
 }
 .topnav a {
     display: block;
