@@ -244,7 +244,10 @@ a.logo {
 }
 
 #socialFooter {
-    position: relative;
+    position: absolute;   
+    right: 0;
+    bottom: 0;
+    left: 0;
     text-align: center;
     color: white;
     background-color: #4c6b80;
