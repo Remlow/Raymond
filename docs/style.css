@@ -89,7 +89,7 @@ p {
 	
 }
 @media only screen and (min-width: 800px) {
-	.topnav .headerlinks {
+	.topnav .headerlinks #mobileheader {
 	    display: none;
 	}
     
@@ -233,7 +233,7 @@ a.logo {
 
 /*Hero image*/
 #herobgImage {
-    
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
