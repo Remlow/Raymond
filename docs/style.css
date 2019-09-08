@@ -42,7 +42,7 @@ a:visited {
 .comingSoon h1 {
     font-size: 70px;
 }
-.comingSoon p h1 {
+.comingSoon p,h1 {
     text-align: center;
 }
   
