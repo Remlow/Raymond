@@ -22,7 +22,11 @@ svg {
     display: block;
     margin: auto;
 }
-a:link a:visited {
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
     text-decoration: none;
     color: white;
 }
@@ -193,8 +197,4 @@ a:link a:visited {
     background-color: #000000;
     padding: 10px;
     grid-column: 1 / 12;
-}
-#socialFooter a:link a:visited{
-    text-decoration: none;
-    color: white;
 }
