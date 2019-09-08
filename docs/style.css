@@ -26,16 +26,14 @@ svg {
 }
 
 .marquee {
-    width: 500px;
     padding: 10px;
-    background: #EEE;
     overflow: hidden;
     position: relative;
   }
   
   .marquee div {
     overflow: hidden;
-    animation: marquee 1s linear infinite;
+    animation: marquee 10s linear infinite;
   }
   
   
