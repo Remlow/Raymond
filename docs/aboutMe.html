@@ -5,18 +5,20 @@
 		<title>Raymonds website | Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="script.js"></script>
+		<script src="./script.js"></script>
 		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	</head>
 	
 	<body>
 		<div id="container">
-            		
+		
 		    <!--Navigation-->
 			<div class="topnav" id="myTopnav">
 				<!--Logo-->
-				<div class="logo"><h1>Raymonds Website</h1></div>
+				<div class="logo">
+					<h1>Raymonds Website</h1>
+				</div>
 				
 				<!--Navigation links-->
 				<a href="./index.html" class="active">Home</a>
@@ -26,59 +28,12 @@
     		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		    </div>
 
-                <!--Javascript-->
-                <script>
-
-                if (screen.width >= 1024) {
-                    window.onscroll = function() {stickynav()};
-                    
-                    var header = document.getElementById("myTopnav");
-                    var sticky = header.offsetTop;
-                    
-                    function stickynav() {
-                    if (window.pageYOffset > sticky) {
-                        header.classList.add("sticky");
-                    } else {
-                        header.classList.remove("sticky");
-                    }
-                    }
-                }
-
-                // If the screen is less than 768px then load this script
-                function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-                </script>
-		    
-		    		    
-		    <!--Hero image container-->
-		    
-        		<div id="herobgImage">
-                    <!--Hero content-->
-    	            <div id="heroContent">
-                        <!--Hero text-->
-                        <div class="heroText">
-                            <h2>Header</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                                </p>
-                        </div>
-                    </div>                                   
-                </div>
-        			
             <!--Content-->
 			<div id="content">
 				
 				<h2>Raymond Li</h2>
+				
 				<h2>Watch this space for updates on my website.</h2>
-
-				
-				
 
 			</div> 
 			<!-- Content  -->
@@ -87,9 +42,14 @@
 		    <div id="socialFooter">
 		                <div id="socialContent">
         				    <p>&copy; R.Li 2018</p>
-        				    <i class='fab fa-facebook-square' style='font-size:36px'></i>
-        				    <i class='fab fa-instagram' style='font-size:36px'></i>
-        				    <i class='fab fa-snapchat-square' style='font-size:36px'></i>
+							<a href="https://www.facebook.com/draymond.li">
+								<i class='fab fa-facebook-square' style='font-size:36px'></i>
+							</a>
+							<a href="https://www.instagram.com/notrayli/">
+								<i class='fab fa-instagram' style='font-size:36px'></i>
+							</a>
+							<a href="./mySnapchat.html"><i class='fab fa-snapchat-square' style='font-size:36px'></i></a>
+							<i class='fab fa-discord' style='font-size:34px'></i>
         		        </div>
             </div>
             
