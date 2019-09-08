@@ -26,6 +26,7 @@ svg {
 }
 
 .marquee {
+    margin: auto;
     padding: 10px;
     overflow: hidden;
     position: relative;
