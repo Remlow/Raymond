@@ -58,10 +58,9 @@ svg {
 	.logo{
 	    grid-column: 2 / 7;
 	}
-	
 	#content {
 	    grid-column: 2 / 3;
-	}
+    }
 	#socialFooter {
 	    grid-column: 1 / 4;
 	    display: grid;
@@ -76,8 +75,7 @@ svg {
 @media only screen and (min-width: 800px) {
 	.topnav .headerlinks  {
 	    display: none;
-	}
-    
+    }
 }
 
 /*Sticky nav header*/
@@ -142,9 +140,10 @@ svg {
     #container {
         display: grid;
     }
-    .modal-content {
-	    width: 80%;
-	}
+    .marquee div {
+        overflow: hidden;
+        animation: marquee 30s linear infinite;
+    }
     .topnav {
         overflow: hidden;
     }
