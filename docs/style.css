@@ -33,7 +33,7 @@ svg {
   
   .marquee div {
     overflow: hidden;
-    animation: marquee 10s linear infinite;
+    animation: marquee 30s linear infinite;
   }
   
   
