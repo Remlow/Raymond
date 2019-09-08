@@ -125,7 +125,7 @@ a:visited {
     display: none;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover {
   border-bottom: 3px solid #fff;
   color: white;
 }
@@ -135,9 +135,7 @@ a:visited {
     color: black;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+
 
 @media screen and (max-width: 768px) {
     #container {
@@ -189,6 +187,9 @@ a:visited {
   }
 }
 
+#socialFooter a:visited{
+    color: white;
+}
 
 #socialFooter {
     position: absolute;   
