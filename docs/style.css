@@ -24,6 +24,13 @@ svg {
     display: block;
     margin: auto;
 }
+
+.GeneratedMarquee {
+    line-height:1.3em;
+    padding:1.5em;
+    
+}
+
 @media only screen and (min-width: 800px) {
 	#container {
 		display: grid;
