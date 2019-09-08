@@ -39,10 +39,10 @@ a:visited {
     overflow: hidden;
     animation: marquee 60s linear infinite;
 }
-.comingSoon {
-    margin: 25%;
+.comingSoon h1 {
+    font-size: 70px;
 }
-.comingSoon p {
+.comingSoon p h1 {
     text-align: center;
 }
   
