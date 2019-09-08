@@ -12,7 +12,9 @@ html, body{
 #content {
 	padding: 10px;
 }
-
+#content h2 {
+    text-align: center;
+}
 p {
     margin: 0 0 8px 0;
 }
