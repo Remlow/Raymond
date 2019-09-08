@@ -24,9 +24,10 @@ svg {
     display: block;
     margin: auto;
 }
-
+a:visited {
+    text-decoration: none;
+}
 .marquee {
-    margin: auto;
     padding: 10px;
     overflow: hidden;
     position: relative;
