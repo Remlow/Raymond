@@ -9,13 +9,9 @@ html, body{
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
 }
-#container {
-    min-height: 100%;
-}
 #content {
 	padding: 10px;
 }
-
 h1, h2, h3, h4 {
 	margin: 0 0 10px 0;
 }
@@ -43,10 +39,11 @@ a:visited {
     overflow: hidden;
     animation: marquee 60s linear infinite;
 }
-
+.comingSoon {
+    margin:auto
+}
 .comingSoon p {
     text-align: center;
-    margin: auto;
 }
   
 @keyframes marquee {
