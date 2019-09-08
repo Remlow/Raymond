@@ -30,8 +30,7 @@ a:visited {
     position: relative;
     background-color: gray;
     background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
-}
-  
+} 
 .marquee div {
     overflow: hidden;
     animation: marquee 60s linear infinite;
