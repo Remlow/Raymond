@@ -22,7 +22,7 @@ svg {
     display: block;
     margin: auto;
 }
-a:visited {
+a:link a:visited {
     text-decoration: none;
     color: white;
 }
