@@ -9,6 +9,9 @@ html, body{
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
 }
+#container {
+    min-height: 100%;
+}
 #content {
 	padding: 10px;
 }
@@ -46,8 +49,7 @@ a:visited {
     margin: auto;
 }
   
-  
-  @keyframes marquee {
+@keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
