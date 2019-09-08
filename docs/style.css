@@ -40,7 +40,7 @@ a:visited {
     animation: marquee 60s linear infinite;
 }
 .comingSoon {
-    margin:auto
+    margin: 25%;
 }
 .comingSoon p {
     text-align: center;
