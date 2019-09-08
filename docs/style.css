@@ -187,10 +187,6 @@ a:visited {
   }
 }
 
-#socialFooter a:visited{
-    color: white;
-}
-
 #socialFooter {
     position: absolute;   
     right: 0;
