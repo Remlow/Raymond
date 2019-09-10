@@ -12,7 +12,7 @@ html, body{
 img {
     max-width: 100%;
     height: auto;
-    
+    padding: 14px 16px;
     background-color: white;
 }
 .logo {
@@ -123,14 +123,6 @@ a:visited {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-.topnav input[type=text] {
-    padding: 6px;
-    margin: auto;
-    border: none;
-    font-size: 17px;
-    border-radius: 25px;
 }
 
 .active {
