@@ -15,6 +15,9 @@ img {
     padding: 14px 16px;
     background-color: white;
 }
+.logo {
+    color: white;
+}
 #content {
 	padding: 10px;
 }
