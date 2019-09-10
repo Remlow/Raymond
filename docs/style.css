@@ -73,9 +73,12 @@ a:visited {
 		grid-column: 1 / 4;
 		display: grid;
 		grid-template-columns: 10% 10%  10%  10%  10%  10% 10% 10% 10%  10% ;
-	}
+    }
+    img {
+        grid-column: 2 / 3;
+    }
 	.logo{
-	    grid-column: 2 / 7;
+	    grid-column: 3 / 7;
 	}
 	#content {
 	    grid-column: 2 / 3;
