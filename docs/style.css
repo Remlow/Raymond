@@ -14,15 +14,7 @@ img {
     padding: 14px 16px;
     background-color: white;
 }
-.logo h2{
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin: auto;
-}
+
 #content {
 	padding: 10px;
 }
@@ -80,12 +72,9 @@ a:visited {
 		grid-template-columns: 10% 10%  10%  10%  10%  10% 10% 10% 10%  10% ;
     }
     .imageLogo {
-        grid-column: 2 / 3;
+        grid-column: 2 / 7;
         max-width: 100%;
     }
-	.logo{
-	    grid-column: 3 / 7;
-	}
 	#content {
 	    grid-column: 2 / 3;
     }
@@ -166,9 +155,6 @@ a:visited {
         float: right;
         display: block;
         border: none;
-    }
-    .logo{
-        display: none;
     }
     .imageLogo {
         background-color: white;
