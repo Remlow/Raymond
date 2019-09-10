@@ -14,9 +14,14 @@ img {
     padding: 14px 16px;
     background-color: white;
 }
-.logo {
-    color: white;
-    padding: 14px 16px; 
+.logo h2{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
 }
 #content {
 	padding: 10px;
@@ -123,8 +128,8 @@ a:visited {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin: auto;
 }
-
 .active {
     border-bottom: 3px solid #fff;
     color: white;
