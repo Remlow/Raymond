@@ -12,11 +12,12 @@ html, body{
 img {
     max-width: 100%;
     height: auto;
-    padding: 14px 16px;
+    
     background-color: white;
 }
 .logo {
     color: white;
+    padding: 14px 16px; 
 }
 #content {
 	padding: 10px;
