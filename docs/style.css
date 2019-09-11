@@ -46,7 +46,9 @@ svg {
 .comingSoon p {
     text-align: center;
 }
-  
+.mobileHeader {
+    color: white;
+} 
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
@@ -82,9 +84,10 @@ svg {
 	
 }
 @media only screen and (min-width: 800px) {
-	.topnav .headerlinks .mobileHeader  {
+	.topnav {
 	    display: none;
     }
+
 }
 
 /*Sticky nav header*/
