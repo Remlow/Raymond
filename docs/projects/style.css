@@ -1,0 +1,118 @@
+/* All colour hexs sourced from */ 
+/* http://paletton.com/#uid=12g0u0kllllaFw0g0qFqFg0w0aF */
+html {
+	height: 100%;
+}
+/* Body styling */
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Archivo Narrow', sans-serif;
+	min-height: 100%;
+	position:relative;
+}
+
+/* Code that is essential for the footer position at the bottom for webpage */
+body::after{ content:''; display:block; height:100px; }
+
+/* Company header */
+.logo {
+	background-color: #D4EE9F;
+	padding: 10px;
+}
+header {
+	margin-left: 200px;
+	font-family: 'Ultra', serif;
+}
+
+/* Navigation code */
+#navigation {
+	background-color: #799E35;
+}
+ul {
+	list-style-type: none;
+	margin: 0px 0px 0px 200px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#navigation li {
+  float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+  color: white;
+  background-color: #3B5000;
+}
+/* End of navigation code */
+
+/* Image width */
+img {
+	height: 300px;
+	max-width: 100%;
+}
+
+/* Website content */	
+.content {
+	margin: 1% 20% 0 20%;
+}
+/* location style formatting*/
+#loaction p  {
+	margin: 2px;
+}
+
+span {
+	font-weight: bold;
+}
+/* Form styling */
+input {
+	margin-bottom: 10px;
+	width: 30%;
+	padding: 10px;
+}
+input[type=submit] {
+	width: 33%;
+	background-color: #66734C;
+	border: none;
+	color: white;
+}
+/* End of form styling */
+
+/* FAQ table styling */
+#faq {
+	text-align:left;
+	width: 100%;
+}
+#faq th{
+	background-color: #799E35;
+	font-size: 25px;
+	color: white;
+}
+#faq td,th{
+	padding: 15px
+}
+#faq tr:nth-child(even) {
+	background-color: #D4EE9F;
+}
+/* End of FAQ table styling */
+
+/* Footer content */
+.footer-content {
+	margin-left: 20%;
+	text-align: left;
+}
+/* Footer background */
+footer {
+	position:absolute; 
+	width: 100%;
+	background-color: #D4EE9F;
+}
+

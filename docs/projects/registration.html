@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pet Inc. | Registration</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+		
+		<!-- Font sourced from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+	<!-- Company title -->
+	<div class="logo">
+	<header>
+		<h1>Pet Inc.</h1>
+	</header>
+	</div>
+	
+	<!-- Navigation -->
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a class="active" href="registration.html">Registration</a></li>
+		</ul>
+	</div>
+	
+	<!-- Registration page content -->
+	<div class="content">
+		<h1>Subscriber registration</h1>
+		<form name="registrationForm" onsubmit="return validateForm()" method="post">
+			First name:<br>
+			<input type="text" name="fName" placeholder="Enter your first name"><br>
+			Last name:<br>
+			<input type="text" name="lName" placeholder="Enter your last name"><br>
+			Street address:<br>
+			<input type="text" name="address" placeholder="Enter your street address"><br>
+			Suburb:<br>
+			<input type="text" name="suburb" placeholder="Enter your suburb"><br>
+			Town/City:<br>
+			<input type="text" name="location" placeholder="Enter your town/city"><br>
+			Credit card:<br>
+			<input type="tel" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"placeholder="Format 1234-1234-1234-1234"><br>
+			Email:<br>
+			<input type="email" name="email" placeholder="Enter your email"><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	
+	<!-- Footer always on the bottom sourced from -->
+	<!-- https://codepen.io/vsync/pen/FyluI -->
+	<footer>
+		<div class="footer-content">
+			<div id="loaction">
+				<h3>Contact information</h3>
+				<p>236  Herald Terrace</p>
+				<p>Island Bay</p>
+				<p>Wellington</p>
+			</div>
+			<p>Contact us on this number <span>0800-12334-1224.</span><p>
+			<p><span>&copy R.Li 2019</span><p>
+		</div>
+	</footer>
+
+
+
+
+	</body>
+</html>
