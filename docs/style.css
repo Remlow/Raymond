@@ -6,7 +6,6 @@ html, body{
 }
 * {
 	box-sizing: border-box;
-	font-family: 'Oswald', sans-serif;
     margin: 0;
 }
 img {
@@ -16,10 +15,12 @@ img {
 }
 
 #content {
-	padding: 10px;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 #content h2 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 p {
     margin: 0 0 8px 0;
@@ -29,6 +30,7 @@ svg {
     margin: auto;
 }
 .marquee {
+    font-family: 'Oswald', sans-serif;
     padding: 10px;
     overflow: hidden;
     position: relative;
@@ -102,6 +104,7 @@ svg {
 
 /*Navigation*/
 .topnav {
+    font-family: 'Oswald', sans-serif;
     background-color: #000000;
 }
 .topnav a {
