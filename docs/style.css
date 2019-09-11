@@ -51,6 +51,7 @@ svg {
 .mobileHeader {
     color: white;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 } 
 @keyframes marquee {
     0% { transform: translateX(100%); }
