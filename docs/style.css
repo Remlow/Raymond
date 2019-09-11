@@ -60,6 +60,7 @@ svg {
     background-color: black;
     color: white;
     width: 5%;
+    padding: 10px;
     text-decoration: none;
 }
 .projectLinks a:hover{
