@@ -63,6 +63,9 @@ svg {
 		display: grid;
 		grid-template-columns: 10% 10%  10%  10%  10%  10% 10% 10% 10%  10% ;
     }
+    .topnav .headerlinks  {
+	    display: none;
+    }
     .imageLogo {
         grid-column: 2 / 7;
         max-width: 100%;
@@ -83,11 +86,6 @@ svg {
 	    padding: 10px;
 	}
 	
-}
-@media only screen and (min-width: 800px) {
-	.topnav .headerlinks  {
-	    display: none;
-    }
 }
 
 /*Sticky nav header*/
