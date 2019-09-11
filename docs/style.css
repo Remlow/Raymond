@@ -48,6 +48,7 @@ svg {
 }
 .mobileHeader {
     color: white;
+    text-align: center;
 } 
 @keyframes marquee {
     0% { transform: translateX(100%); }
