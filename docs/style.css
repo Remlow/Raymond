@@ -185,14 +185,8 @@ a:visited {
   }
 }
 
-#socialFooter {
-    position: absolute;   
-    right: 0;
-    bottom: 0;
-    left: 0;
+#socialContent {
     text-align: center;
-    color: white;
-    background-color: #000000;
+    color: black;
     padding: 10px;
-    grid-column: 1 / 12;
 }
