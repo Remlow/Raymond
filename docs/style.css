@@ -6,6 +6,7 @@ html, body{
 }
 * {
 	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
     margin: 0;
 }
 img {
@@ -15,12 +16,10 @@ img {
 }
 
 #content {
-    padding: 10px;
-    font-family: 'Oswald', sans-serif;
+	padding: 10px;
 }
 #content h2 {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
 }
 p {
     margin: 0 0 8px 0;
@@ -28,10 +27,6 @@ p {
 svg {
     display: block;
     margin: auto;
-}
-.mobileHeader {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
 }
 .marquee {
     padding: 10px;
@@ -51,6 +46,7 @@ svg {
 .comingSoon p {
     text-align: center;
 }
+  
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
@@ -155,9 +151,6 @@ svg {
     }
     .imageLogo {
         display: none;
-    }
-    .mobileHeader {
-        display: block;
     }
 }
 /*Responsive nav hamburger*/
