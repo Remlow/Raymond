@@ -84,7 +84,7 @@ svg {
 	}
 }
 @media only screen and (min-width: 800px) {
-	.topnav .imageLogo {
+	.topnav .mobileHeader {
 	    display: none;
     }
 }
@@ -151,9 +151,7 @@ svg {
         border: none;
     }
     .imageLogo {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 50%;
+        display: none;
     }
 }
 /*Responsive nav hamburger*/
