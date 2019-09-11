@@ -157,8 +157,7 @@ svg {
         display: none;
     }
     .mobileHeader {
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
+        display: block;
     }
 }
 /*Responsive nav hamburger*/
