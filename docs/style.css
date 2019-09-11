@@ -29,6 +29,10 @@ svg {
     display: block;
     margin: auto;
 }
+.mobileHeader {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
 .marquee {
     padding: 10px;
     overflow: hidden;
@@ -47,8 +51,6 @@ svg {
 .comingSoon p {
     text-align: center;
 }
-
-  
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
