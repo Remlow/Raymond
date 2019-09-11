@@ -81,13 +81,11 @@ svg {
 	    grid-column: 2 / 3;
 	    padding: 10px;
 	}
-	
 }
 @media only screen and (min-width: 800px) {
-	.topnav {
+	.topnav .imageLogo {
 	    display: none;
     }
-
 }
 
 /*Sticky nav header*/
