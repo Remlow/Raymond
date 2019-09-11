@@ -53,10 +53,14 @@ svg {
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
+.projectLinks {
+    padding: 10px;
+}
 .projectLinks a:link, a:visited{
     background-color: black;
     color: white;
-    padding: 14px 25px;
+    width: 5%;
+    text-decoration: none;
 }
 .projectLinks a:hover{
     background-color:gray;
