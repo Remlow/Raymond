@@ -184,10 +184,9 @@ svg {
 }
 #socialContent a:link {
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    color: black;
 }
 #socialContent a:visited {
     text-decoration: none;
-    color: white;
+    color: black;
 }
