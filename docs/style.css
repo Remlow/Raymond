@@ -53,11 +53,15 @@ svg {
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
-.projectLinks {
+.projectLinks a:link a:visited{
     background-color: black;
     color: white;
     padding: 14px 25px;
 }
+.projectLinks a:hover{
+    background-color:gray;
+}
+
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
