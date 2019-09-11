@@ -67,6 +67,9 @@ svg {
         grid-column: 2 / 7;
         max-width: 100%;
     }
+    .mobileHeader {
+        display: none;
+    }
 	#content {
 	    grid-column: 2 / 3;
     }
