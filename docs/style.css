@@ -53,15 +53,7 @@ svg {
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
-.projectLinks a {
-    background-color:white;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-}
+
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
