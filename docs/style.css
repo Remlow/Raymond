@@ -28,14 +28,6 @@ svg {
     display: block;
     margin: auto;
 }
-a:link {
-    text-decoration: none;
-    color: white;
-}
-a:visited {
-    text-decoration: none;
-    color: white;
-}
 .marquee {
     padding: 10px;
     overflow: hidden;
@@ -189,4 +181,13 @@ a:visited {
     text-align: center;
     color: black;
     padding: 10px;
+}
+#socialContent a:link {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+#socialContent a:visited {
+    text-decoration: none;
+    color: white;
 }
