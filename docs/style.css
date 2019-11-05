@@ -186,6 +186,9 @@ body, html {
     .topnav {
       display: none;
     }
+    #main {
+      display: none;
+    }
   }
   
   @keyframes marquee {
