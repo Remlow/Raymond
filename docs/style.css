@@ -91,6 +91,10 @@ svg {
     #heroImage {
         grid-column: 1 / 12;
         background-image: url("./images/7124008743_c720a251f6_b.jpg");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 	#content {
