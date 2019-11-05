@@ -89,7 +89,7 @@ svg {
         max-width: 100%;
     }
     #heroImage {
-        grid-column: 1 / 12;
+        grid-column: 1 / 10;
         display: grid;
 		grid-template-columns: 10% 10%  10%  10%  10%  10% 10% 10% 10%  10% ;
         background-image: url("./images/7124008743_c720a251f6_b.jpg");
