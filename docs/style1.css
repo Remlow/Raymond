@@ -2,9 +2,10 @@
   box-sizing: border-box;
   margin: 0;
 }
-body {
+body, html{
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
+  height: 100%;
 }
 
 .sidenav {
