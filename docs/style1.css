@@ -73,7 +73,7 @@ body, html{
 }
 .title {
   padding: 16px;
-  
+  border-bottom: 2px solid #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
