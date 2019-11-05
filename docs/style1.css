@@ -142,7 +142,7 @@ body, html{
 }
 
 @media screen and (min-width: 800px) {
-  .topnav .container{
+  .topnav{
     display: none;
   }
 }
