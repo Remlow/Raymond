@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -53,7 +54,7 @@ body {
   /* The image used */
   background-image: url("./images/7124008743_c720a251f6_b.jpg");
 
-  min-height: 380px;
+  height: auto;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -63,6 +64,25 @@ body {
   /* Needed to position the navbar */
   position: relative;
 }
+
+.hero-image {
+  background-image: url("./images/7124008743_c720a251f6_b.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 /* Position the navbar container inside the image */
 .container {
   position: absolute;
