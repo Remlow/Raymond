@@ -152,3 +152,28 @@ body, html{
     display: none;
   }
 }
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: gray;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+} 
+.marquee div {
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.comingSoon h1 {
+  font-size: 70px;
+  text-align: center;
+}
+.comingSoon p {
+  text-align: center;
+}
