@@ -78,6 +78,9 @@ body, html{
   padding: 16px;
   border-bottom: 2px solid #f1f1f1;
 }
+.snop {
+  margin-top: 5px;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
