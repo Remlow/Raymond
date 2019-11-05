@@ -4,7 +4,7 @@ body, html {
   }
   
   .bgimg {
-    background-image: url('');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/7124008743_c720a251f6_b.jpg");
     height: 100%;
     background-position: center;
     background-size: cover;
