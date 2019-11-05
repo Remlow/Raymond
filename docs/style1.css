@@ -140,3 +140,9 @@ body, html{
     text-align: left;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .topnav {
+    display: none;
+  }
+}
