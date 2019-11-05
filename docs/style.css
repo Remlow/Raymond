@@ -96,7 +96,12 @@ svg {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    .name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 	#content {
 	    grid-column: 2 / 3;
     }
