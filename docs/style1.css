@@ -70,6 +70,8 @@ body, html{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
 }
 .title {
   padding: 16px;
