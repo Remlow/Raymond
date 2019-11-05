@@ -72,6 +72,7 @@ body, html{
   color: white;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  padding: 16px;
 }
 .title {
   padding: 16px;
