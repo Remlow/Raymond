@@ -88,6 +88,10 @@ svg {
         grid-column: 2 / 3;
         max-width: 100%;
     }
+    #heroImage {
+        grid-column: 1 / 12;
+    }
+
 	#content {
 	    grid-column: 2 / 3;
     }
