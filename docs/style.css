@@ -38,3 +38,18 @@ body, html {
     margin: auto;
     width: 40%;
   }
+
+  #socialContent {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: black;
+    padding: 10px;
+  }
+  #socialContent a:link {
+    text-decoration: none;
+    color: black;
+  }
+  #socialContent a:visited {
+    text-decoration: none;
+    color: black;
+  }
