@@ -13,30 +13,39 @@
 	</head>
 	
 	<body>
-		<div id="container">
-		
-		    <!--Navigation-->
+
 			<div class="topnav" id="myTopnav">
-
-				<div class="imageLogo">
-						<img src="./images/LogoMakr_3N4h2B.png">							
-                </div>
-                
-				<div class="mobileHeader">
-                        <h1>RAYMONDL LI</h1>
-                </div>	
-                    
-
-				<!--Navigation links-->
-				<a href="./index.html">Home</a>
-				<a href="./aboutMe.html">About me</a>
-				<a href="./projects.html" class="active">Projects</a>
-				
-    
-            <!--Hamburger menu-->
-    		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		    </div>
-
+					<a href="./index.html">Home</a>
+					<a href="./aboutMe.html">About me</a>
+					<a href="./projects.html">Projects</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>
+		
+					<div class="bg-img">	
+						
+						<div class="container">
+							
+							<div id="mySidenav" class="sidenav">
+								<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								<a href="./index.html">Home</a>
+								<a href="./aboutMe.html">About me</a>
+								<a href="#./projects.html">Projects</a>
+							</div>
+		
+							<div id="main">				
+								<span style="margin-left:40px;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+							</div>
+		
+							<div class="name">
+								<h1 class="title">Raymond Li</h1>
+								<p class="snop">All things about me and some other stuff</p>
+							</div>					
+							
+						</div>
+					</div>
+					
             <!--Content-->
 			<div id="content">
 
@@ -74,14 +83,7 @@
 					
 				 
 			</div> 
-			<!-- Content  -->
 
-			<!--Social footer-->
-			<div id="socialFooter">
-				
-			</div>
-		               
-		</div>  <!-- Container  -->
 	</body>
 
 </html>
