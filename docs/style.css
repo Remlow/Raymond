@@ -60,6 +60,7 @@ hr {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .sidenav a {
@@ -90,6 +91,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  filter: grayscale(100%);
   font-family: "Courier New", Courier, monospace;
 }
 
