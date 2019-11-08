@@ -23,6 +23,7 @@ img {
   height: 5%;
   width: 5%;
   vertical-align: middle;
+  filter: grayscale(100%);
 }
 
 .bottomleft {
