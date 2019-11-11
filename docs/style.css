@@ -233,6 +233,9 @@ hr {
     margin-right: 20px;
     color: white;
   }
+  .middle p {
+    font-size: 16px;
+  }
 }
 
 
@@ -244,13 +247,12 @@ hr {
 
 
 .bg-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/7124008743_c720a251f6_b.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/7124008743_c720a251f6_b.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  filter: grayscale(100%);
   font-family: "Courier New", Courier, monospace;
 }
 
