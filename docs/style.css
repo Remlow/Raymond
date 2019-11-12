@@ -310,6 +310,20 @@ hr {
   height: 100%;
 }
 
+.contact {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white;
+  border: 2px solid #ffffff;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;  
+}
+.contact:hover {
+  background: #c5b358;
+}
+
 #socialContent {
   font-family: 'Oswald', sans-serif;
   text-align: center;
