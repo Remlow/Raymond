@@ -310,7 +310,7 @@ hr {
   height: 100%;
 }
 
-.contact {
+a.contact{
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: white;
@@ -320,7 +320,7 @@ hr {
   text-decoration: none;
   display: inline-block;  
 }
-.contact:hover {
+a.contact:hover {
   background: #c5b358;
 }
 
