@@ -45,7 +45,9 @@ body, html {
   .content{
     grid-column: 2 / 3;
   }
-  
+  .comingSoon h1 {
+    font-size: 70px;
+  }
 }
 
 .img {
@@ -246,10 +248,9 @@ hr {
     display: inline-block;  
   }
   a.contact:hover {
-    background: #c5b358;
+    background-color: #c5b358;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   #main {
@@ -436,6 +437,7 @@ a.contact {
 }
 a.contact:hover {
   background: #c5b358;
+  color:black;
 }
 
 .marquee {
@@ -456,9 +458,6 @@ a.contact:hover {
   overflow: hidden;
   animation: marquee 60s linear infinite;
 }
-.comingSoon h1 {
-  font-size: 70px;
-}
 
 a.contactLink {
   margin: 20px auto 20px auto ;
@@ -472,7 +471,8 @@ a.contactLink {
   display: inline-block;  
 }
 a.contactLink:hover {
-  background: #c5b358;
+  background-color: #c5b358;
+  color:black;
 }
 
 @keyframes marquee {
@@ -486,11 +486,7 @@ a.contactLink:hover {
   color: white;
   padding: 10px;
 }
-#socialContent a:link {
-  text-decoration: none;
-  color: white;
-}
-#socialContent a:visited {
+#socialContent a:link, a:visited {
   text-decoration: none;
   color: white;
 }
@@ -503,18 +499,8 @@ a.contactLink:hover {
   background-color: black;
 }
 
-#socialContentFinal a:link {
-  text-decoration: none;
-  color: white;
-}
-
-#socialContentFinal a:visited {
-  text-decoration: none;
-  color: white;
-}
-
 #socialContentComingsoon {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   color: white;
   padding: 10px;
