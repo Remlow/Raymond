@@ -19,24 +19,7 @@ body, html {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
   .row {
     display: grid;
 		grid-template-columns: 10% 80% 10%;
@@ -88,6 +71,130 @@ body, html {
   #Mmain {
     display: none;
   }
+  .imageLogo {
+    height: 8%;
+    width: 8%;
+    vertical-align: middle;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Courier New", Courier, monospace;
+  } 
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #c5b358;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #Mmain{   
+    padding: 20px;
+    font-size:30px;
+    cursor:pointer;
+    background-color: #111;   
+  }
+  .MimageLogo {
+    width: 15%; 
+    vertical-align: middle; 
+  }
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: white;
+  }
+  .middle p {
+    font-size: 16px;
+  }
+  a.contact {
+    font-size: 16px;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  
+  }
+  a.contact:hover {
+    background-color: #c5b358;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #c5b358;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #Mmain {
+    display: none;
+  }
+  .imageLogo {
+    height: 5%;
+    width: 5%;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #main {
+    display: none;
+  }
 }
 
 .img {
@@ -99,12 +206,6 @@ body, html {
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
-}
-
-.imageLogo {
-  height: 5%;
-  width: 5%;
-  vertical-align: middle;
 }
 
 .mobileLogo {
@@ -139,123 +240,6 @@ hr {
   margin: auto;
   width: 40%;
   margin-bottom: 5px;
-}
-
-@media only screen and (min-width: 992px) {
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #c5b358;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  #Mmain {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #c5b358;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  #Mmain{   
-    padding: 20px;
-    font-size:30px;
-    cursor:pointer;
-    background-color: #111;   
-  }
-  .MimageLogo {
-    width: 15%; 
-    vertical-align: middle; 
-  }
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-    color: white;
-  }
-  .middle p {
-    font-size: 16px;
-  }
-
-  a.contact {
-    font-size: 16px;
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: white;
-    border: 2px solid #ffffff;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;  
-  }
-  a.contact:hover {
-    background-color: #c5b358;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #main {
-    display: none;
-  }
 }
 
 .bg-img {
