@@ -89,7 +89,7 @@ body, html {
 }
 
 hr {
-  margin: auto;
+  margin: 10px auto 10px auto;
   width: 40%;
 }
 
@@ -233,6 +233,21 @@ hr {
   .middle p {
     font-size: 16px;
   }
+
+  a.contact {
+    font-size: 16px;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  
+  }
+  a.contact:hover {
+    background: #c5b358;
+  }
 }
 
 
@@ -253,12 +268,6 @@ hr {
   font-family: "Courier New", Courier, monospace;
 }
 
-
-/* Position the navbar container inside the image */
-.container {
-  width: auto;
-}
-
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -276,12 +285,6 @@ hr {
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   padding: 16px;
   border: 3px solid white;
-}
-.title {
-  padding: 16px;
-}
-.snop {
-  margin-top: 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -307,7 +310,121 @@ hr {
   height: 100%;
 }
 
-a.contact{
+.porfolio {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.porfolio,
+.porfolio > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.projectContainer {
+  position: relative;
+  width: 50%;
+}
+
+.portfolioImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.projectLink {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projectContainer:hover .portfolioImage {
+  opacity: 0.3;
+}
+
+.projectContainer:hover .projectLink {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.portfolioRow {
+  margin: 8px -16px;
+  display: table-cell;
+}
+
+/* Add padding BETWEEN each column */
+.portfolioRow,
+.portfolioRow > .portfolioColumn {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.portfolioColumn {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.portfolioRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.portfolioContent {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .portfolioColumn {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .portfolioColumn {
+    width: 100%;
+  }
+}
+
+a.contact {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: white;
@@ -319,6 +436,48 @@ a.contact{
 }
 a.contact:hover {
   background: #c5b358;
+}
+
+.marquee {
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: gray;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+} 
+.comingSoon {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #111;
+  color: white;
+}
+.marquee div {
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.comingSoon h1 {
+  font-size: 70px;
+}
+
+a.contactLink {
+  margin: 20px auto 20px auto ;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  color: white;
+  border: 2px solid #ffffff;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;  
+}
+a.contactLink:hover {
+  background: #c5b358;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 #socialContent {
@@ -353,5 +512,18 @@ a.contact:hover {
   text-decoration: none;
   color: white;
 }
+
+#socialContentComingsoon {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+#socialContentComingsoon a:link, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+
 
 
