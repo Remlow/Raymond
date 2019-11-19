@@ -97,7 +97,7 @@ body, html {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .indexSection {
     display: none;
   }
@@ -141,8 +141,7 @@ body, html {
     color: #ffffff;
     display: block;
     transition: 0.3s;
-  }
-  
+  } 
   .sidenav a:hover {
     color: #c5b358;
   }
@@ -285,7 +284,7 @@ SETTINGS
     --smLinkPadding: 10px 15px;
     --smLinkLineWeight: 5px;
     --smLinkLineColor: #c5b358;
-    --smLinkTextColor: #c5b358;
+    --smLinkTextColor: #ffffff;
     --smLinkTextColorHover: #c5b358;
   }
 
