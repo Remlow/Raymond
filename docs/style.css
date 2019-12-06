@@ -14,11 +14,6 @@ body, html {
   display: table;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
 @media only screen and (max-width: 600px) {
   .sidenav {
     height: 100%;
@@ -296,6 +291,10 @@ SETTINGS
 
 }
 
+/*
+Desktop
+*/
+
 @media only screen and (min-width: 1200px) {
   .row {
     display: grid;
@@ -304,6 +303,9 @@ SETTINGS
   }
   .content{
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr auto;
   }
   .imageLogo {
     width: 5%;
@@ -314,7 +316,33 @@ SETTINGS
     margin: 10px;
     vertical-align: middle;
   }
+  .left {
+    grid-column: 1 / 2;
+    padding: 10px;
+  }
+  .right {
+    grid-column: 2 / 3;
+    border-left: #c5b358 solid;
+    padding: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x:auto;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
 }
+/*
+ End of desktop
+*/
 
 .img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/7124008743_c720a251f6_b.jpg");
@@ -350,9 +378,13 @@ SETTINGS
   border: 3px solid white;
 }
 
-hr {
+.hrHero {
   margin: 10px auto 10px auto;
   width: 40%;
+}
+
+.hrContent{
+  border: 2px solid #c5b358;
 }
 
 .sc {
