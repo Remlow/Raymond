@@ -79,11 +79,27 @@ body, html {
   a.contact:hover {
     background-color: #c5b358;
   }
+}
+@media only screen and (max-width: 600px) {
   #main {
+    display: none;
+  }
+  .indexSection {
+    display: none;
+  }
+  .section {
     display: none;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .indexSection {
+    display: none;
+  }
+  .section {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .row {
@@ -142,18 +158,6 @@ body, html {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .indexSection {
-    display: none;
-  }
-  .section {
-    display: none;
-  }
-  .sidenav {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 992px) {
   .row {
     display: grid;
@@ -162,6 +166,12 @@ body, html {
   }
   .content{
     grid-column: 2 / 3;
+  }
+  .sidenav {
+    display: none;
+  }
+  #main {
+    display: none;
   }
   .imageLogoHome {
     height: 8%;
@@ -636,7 +646,6 @@ a.contactLink:hover {
   text-decoration: none;
   color: white;
 }
-
 
 
 
