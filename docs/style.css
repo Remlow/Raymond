@@ -79,8 +79,6 @@ body, html {
   a.contact:hover {
     background-color: #c5b358;
   }
-}
-@media only screen and (max-width: 600px) {
   #main {
     display: none;
   }
@@ -92,13 +90,62 @@ body, html {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .indexSection {
+@media only screen and (orientation: landscape) {
+  .row {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr auto;
+  }
+  .content{
+    grid-column: 2 / 3;
+  }
+  .comingSoon h1 {
+    font-size: 70px;
+  }
+  .comingSoonContent{
+    grid-column: 2 / 3;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  } 
+  .sidenav a:hover {
+    color: #c5b358;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #Mmain {
     display: none;
   }
-  .section {
-    display: none;
+  .imageLogo {
+    height: 8%;
+    width: 8%;
+    vertical-align: middle;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,6 +202,16 @@ body, html {
     height: 8%;
     width: 8%;
     vertical-align: middle;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .indexSection {
+    display: none;
+  }
+  .section {
+    display: none;
   }
 }
 
